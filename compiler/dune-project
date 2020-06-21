@@ -1,0 +1,13 @@
+(lang dune 2.5.1)
+(using menhir 2.0)
+
+(name pc)
+(version 0.0.0)
+(generate_opam_files true)
+
+
+(package
+ (name pc)
+ (synopsis "Prime compiler")
+ (description "Compiler for Prime programming language"
+))

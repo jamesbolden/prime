@@ -1,0 +1,8 @@
+(library
+ (name src)
+ (libraries core llvm sedlex menhirLib)
+ (preprocess (pps sedlex.ppx)))
+
+(menhir
+ (modules parse)
+ (flags (:standard --external-tokens Token)))

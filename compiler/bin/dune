@@ -1,0 +1,6 @@
+(executable
+ (name pc)
+ (libraries src core llvm sedlex menhirLib)
+ (preprocess (pps sedlex.ppx))
+ (flags (:standard -rectypes -thread -unboxed-types -unsafe -unsafe-string -g -labels -opaque -linkall))
+ (ocamlopt_flags (:standard -O3 -p -unbox-closures)))
